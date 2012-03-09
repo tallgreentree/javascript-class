@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+        <head>
+                <title>Events via Event Binding</title>
+                <script type="text/javascript">
+                        window.onload = function() {
+                                var helloLink = document.getElementById('the-hello-link');
+                                helloLink.onclick = function() {
+                                        alert("Hi!");
+                                }
+                        }
+                </script>
+        </head>
+        <body>
+                <a href="#" id="the-hello-link">Say Hello</a>
+                
+
+        </body>
+</html>

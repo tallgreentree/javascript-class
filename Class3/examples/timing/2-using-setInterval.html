@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+        <head>
+                <title>Using setInterval()</title>
+        </head>
+        <body>
+                <div id="clock">6</div>
+                <a href="#" onclick="clearInterval(clockinterval)">Stop</a>
+
+                <script type="text/javascript">
+                        var timer = function() {
+                                time = document.getElementById("clock");
+                                newtime = parseInt(time.innerHTML) - 1;
+                                time.innerHTML = newtime;
+                                if( newtime == 0 ) {
+                                        clearInterval(clockinterval);
+                                        alert('Too slow!');
+                                }
+                        }
+                        var clockinterval = setInterval('timer()', 1000);
+                </script>
+        </body>
+</html>
+                                                            
