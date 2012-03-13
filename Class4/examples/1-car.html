@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+        <head>
+                <title>Car Example</title>
+                <script src="1-car.js" type="text/javascript"></script>
+        </head>
+        <body>
+                <h1>A story about a car</h1>
+                <p>Tom, Dick, and Harry wanted to go for a drive, so they all get in the car.</p>
+                <script type="text/javascript">
+                        car.pickup('Tom').pickup('Dick').pickup('Harry').statePassengers();
+                </script>
+                <p>They then started driving.</p>
+                <script type="text/javascript">
+                        car.accelerate(25).stateSpeed();
+                </script>
+                <p>After a bit, they got on the highway.</p>
+                <script type="text/javascript">
+                        car.accelerate(40).stateSpeed();
+                </script>
+                <p>A winnebago appeared in front of them so they applied the breaks.</p>
+                <script type="text/javascript">
+                        car.brake(20).stateSpeed();
+                </script>
+                <p>The driver didn't like that, so he swore.</p>
+                <script type="text/javascript">
+                        car.driver.swear();
+                </script>
+
+        </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+        <head>
+                <title>2 Cars</title>
+                <script src="2-cars.js" type="text/javascript"></script>
+        </head>
+        <body>
+                <h1>A Tale of 2 Cars</h1>
+                <p>Mike and Sam decided to race their cars, so they each hopped in their autos.</p>
+                <p>BTW, Mike's favorite swear is "FEATHERS!" and Sam's is "GEESH!"</p>
+                <script type="text/javascript">
+                        var samcar = car.extend();
+                        samcar.driver = driver.extend();
+                        samcar.driver.favoriteSwear = "GEESH!";
+                        samcar.pickup('Sam').statePassengers();
+                        var mikecar = car.extend();
+                        mikecar.driver = driver.extend();
+                        mikecar.driver.favoriteSwear = "FEATHERS!";
+                        mikecar.pickup('Mike').statePassengers();
+                </script>
+                <p>Sam got off the line first, so Mike got mad.</p>
+                <script type="text/javascript">
+                        samcar.accelerate(10).stateSpeed();
+                        mikecar.driver.swear();
+                </script>
+
+                <p>Mike floored it, speeding past Sam a little bit later.</p>
+                <script type="text/javascript">
+                        samcar.accelerate(40).stateSpeed();
+                        mikecar.accelerate(60).stateSpeed();
+                        samcar.driver.swear();
+                </script>
+
+                <p>As the course was short, Mike won the race. Both drivers slowed to a stop. Being a good sport, Sam didn't swear again.</p>
+                <script type="text/javascript">
+                        samcar.brake(50).stateSpeed();
+                        mikecar.brake(60).stateSpeed();
+                </script>
+        </body>
+</html>
