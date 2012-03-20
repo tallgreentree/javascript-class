@@ -15,6 +15,7 @@ var TodoList = {
                       newitem.appendChild(checkbox);
                       newitem.appendChild(content);
                       TodoList.list.appendChild(newitem);
+                      TodoList.form.reset();
                       return false;
                },
         completeTodo: function() {
