@@ -1,4 +1,5 @@
 var position = 0;
+var interval;
 var move = function() {
         if(position < 100) { 
                 position += 1;
@@ -8,9 +9,9 @@ var move = function() {
         }
 };
 
-window.onclick = function() {
+window.onload = function() {
         var div = document.getElementById('wat');
         div.onclick = function() {
-                setInterval(move, 10);
+                interval = setInterval(move, 10);
         };
-}
+};
