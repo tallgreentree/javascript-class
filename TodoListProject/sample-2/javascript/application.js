@@ -18,7 +18,7 @@ var TodoList = {
         completeTodo: function() {
                       var li = $(this).parent();
                       li.fadeOut('slow', function() {
-                              this.remove();
+                              li.remove();
                       });
         }
 };
