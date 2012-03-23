@@ -12,7 +12,7 @@ var TodoList = {
                       newitem.append(input.value);
                       TodoList.list.append(newitem);
                       newitem.fadeIn('slow');
-                      TodoList.form.reset();
+                      TodoList.form[0].reset();
                       event.preventDefault();
                },
         completeTodo: function() {
