@@ -1,0 +1,15 @@
+<script type="text/template" id="item-template">
+  <div class="view">
+    <input class="toggle" type="checkbox" {{= completed ? 'checked="checked"' : '' }} />
+    <label>{{= item }}</label>
+    <a href="#" class="destroy">delete</a>
+  </div>
+</script>
+
+<div id="todoapp">
+<h1>Todos</h1>
+<input type="text" id="new-todo" placeholder="What needs to be done?" /><button id="add-todo">Add</button>
+
+<ul id="todo-list"></ul>
+</div>
+Loading...
